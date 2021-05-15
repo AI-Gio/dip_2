@@ -4,7 +4,7 @@ Classifies whether sentences are written in English or in Dutch
 ## Installments
 Download or clone this git to your computer.
 
-```shell
+```sh
 pip install -r requirements.txt
 ```
 ## How to run the code
@@ -12,14 +12,14 @@ After you have installed the requirements. You can run the code below in the fol
 
 
 Ex. 
-```shell
+```sh
 C:\Users\gsvpk\PycharmProjects\dip_2>
 ```
 
 To run a txt file you want to classify in windows ->
 
 Now our file is called "zinnen_test.txt". But you can put every txt file in there with lines of Dutch and English sentences.
-```shell
+```sh
 type zinnen_test.txt | hadopy --mapper "python mapper.py" --reducer "python reducer.py" | hadopy --mapper "python mapper2.py" --reducer "python reducer2.
 py"
 ```
@@ -75,7 +75,7 @@ If you want to create your own languages inside comment and uncomment these line
 ![reducer.py](dip_3.png)
 
 Run in the folder/path in terminal:
-```shell
+```sh
 type your_own_language_file_name.txt | hadopy --mapper "python mapper.py" --reducer "python reducer.py"
 ```
 "your_own_language_file_name.txt" should be file containing plain utf8 text in your chosen language
@@ -114,7 +114,7 @@ Don't forget to change reducer2.py too with the if and else to count the sentenc
 
 After you have all the steps above. You can redo the commenting and keep the added code you added yourself (created dictionary of your own language). You can run this code in the folder of dip_2
 
-```shell
+```sh
 type your_own_language_testfile_name.txt | hadopy --mapper "python mapper.py" --reducer "python reducer.py" | hadopy --mapper "python mapper2.py" --reducer "python reducer2.
 py"
 ```
