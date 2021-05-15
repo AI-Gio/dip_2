@@ -25,7 +25,7 @@ py"
 ```
 
 Your output should look something like this:
-![Output](https://imgur.com/a/mLMxma1)
+![Output](dip_1.png)
 
 ## Explanation of code
 ### mapper.py
@@ -69,10 +69,10 @@ Your output should look something like this:
 If you want to create your own languages inside comment and uncomment these lines in these files:
 
 ### mapper.py
-![mapper.py](https://imgur.com/a/fT1ciOF)
+![mapper.py](dip_2.png)
 
 ### reducer.py
-![reducer.py](https://imgur.com/a/P9XWh5m)
+![reducer.py](dip_3.png)
 
 Run in the folder/path in terminal:
 ```shell
@@ -87,7 +87,7 @@ That dictionary can be copied and should be added to mapper2.py
 language_name = "here comes the dictionary from the print all on this line"
 ```
 ### mapper2.py
-![mapper2.py](https://imgur.com/a/hZ382me)
+![mapper2.py](dip_4.png)
 
 ```python3
 for line in sys.stdin:
@@ -119,3 +119,5 @@ type your_own_language_testfile_name.txt | hadopy --mapper "python mapper.py" --
 py"
 ```
 Now you have added your own language and you can see how many sentences it has classified if everything was changed correctly.
+## Author
+Guy Veenhof
